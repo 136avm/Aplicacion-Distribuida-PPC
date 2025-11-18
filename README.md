@@ -16,10 +16,11 @@ cd Aplicacion-Distribuida-PPC
 
 ## 2️⃣ Compilar el proyecto y ejecutar los .jar
 
-Para ello ejecutaremos el siguiente comando
+Para ello ejecutaremos el siguiente comando:
 ```bash
 ./run.sh
 ```
+Este script nos genera la carpeta `target` con los jars necesarios para la ejecución del proyecto y los ejecuta, si no tuviésemos maven instalado lo instala antes de hacer los jars
 
 ---
 
