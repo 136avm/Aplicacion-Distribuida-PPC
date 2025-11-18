@@ -1,0 +1,28 @@
+# Archivos compilados de Java
+/bin/
+/target/
+
+# Archivos de Eclipse
+/.classpath
+/.project
+/.settings/
+
+# Logs generados por la aplicación
+/logs/
+/*.log
+
+# Archivos temporales del sistema
+*.tmp
+*.swp
+*.DS_Store
+
+# Dependencias de Maven locales
+/.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Archivos de configuración generados por Eclipse/Maven
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Ignorar librerías externas si las añades al pom.xml
+/lib/

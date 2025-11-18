@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Estacion">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="T" type="xs:double" minOccurs="0" />
+				<xs:element name="H" type="xs:double" minOccurs="0" />
+				<xs:element name="PM10" type="xs:double" minOccurs="0" />
+				<xs:element name="SO2" type="xs:double" minOccurs="0" />
+				<xs:element name="NO2" type="xs:double" minOccurs="0" />
+				<xs:element name="O3" type="xs:double" minOccurs="0" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
