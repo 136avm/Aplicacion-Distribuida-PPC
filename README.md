@@ -16,11 +16,9 @@ cd Aplicacion-Distribuida-PPC
 
 ## 2️⃣ Compilar el proyecto y ejecutar los .jar
 
-Para ello ejecutaremos el siguiente código
+Para ello ejecutaremos el siguiente comando
 ```bash
-mvn clean package
-java -jar target/MainServidor-jar-with-dependencies.jar
-java -jar target/ClienteGUI-jar-with-dependencies.jar
+./run.sh
 ```
 
 ---
