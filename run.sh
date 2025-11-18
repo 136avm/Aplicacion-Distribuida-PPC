@@ -14,6 +14,15 @@ parar() {
 
 trap parar SIGINT
 
+if ! command -v mvn &> /dev/null; then
+    if command -v apt &> /dev/null; then
+        sudo apt update
+        sudo apt install -y maven
+    else
+        exit 1
+    fi
+fi
+
 mvn clean package || exit 1
 
 java -jar target/MainServidor-jar-with-dependencies.jar &
