@@ -1,4 +1,4 @@
-# Escenario distribuido en Red
+# Escenario distribuido en Red UDP
 
 Este proyecto consiste en la simulación de **tres servidores** y **un cliente** UDP. En este entorno, los servidores envían por broadcast mensajes sobre variables de control de calidad del aire como pueden ser la temperatura, humedad relativa...
 El cliente a su vez, puede enviar **mensajes de control** para modificar el comportamiento de los servidores. Todos los mensajes van **serializados** con XML por defecto y con opción de cambiar a JSON.
