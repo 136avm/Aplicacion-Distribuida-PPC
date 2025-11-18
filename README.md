@@ -13,17 +13,15 @@ El cliente a su vez, puede enviar **mensajes de control** para modificar el comp
 git clone https://github.com/136avm/Aplicacion-Distribuida-PPC
 cd Aplicacion-Distribuida-PPC
 ```
-## 2️⃣ Descargar la librería GSON
 
-Descargar la librería para serializar/deserializar JSON desde [este enlace](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.13.2/gson-2.13.2.jar).
+## 2️⃣ Compilar el proyecto y ejecutar los .jar
 
-## 3️⃣ Abrir proyecto en Eclipse y añadir la librería
-
-1. Abrir el proyecto en Eclipse.
-2. Click derecho sobre el proyecto, en la pestaña **Build Path** darle a la opción **Configure Build Path**.
-3. En el apartado **Libraries**, darle click en **Classpath** y luego en el botón de **Add External JARs**.
-4. Elegir el .jar donde lo hayamos guardado.
-5. Ejecutar el `MainServidor.java` y el `ClienteGUI.java`.
+Para ello ejecutaremos el siguiente código
+```bash
+mvn clean package
+java -jar target/MainServidor-jar-with-dependencies.jar
+java -jar target/ClienteGUI-jar-with-dependencies.jar
+```
 
 ---
 
