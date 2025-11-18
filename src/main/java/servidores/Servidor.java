@@ -1,6 +1,7 @@
 package servidores;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -37,6 +38,10 @@ public class Servidor extends Thread {
         seleccionarVariables();
 
         try {
+        	File logDir = new File("logs");
+            if (!logDir.exists()) {
+                logDir.mkdirs();
+            }
             socket = new DatagramSocket(puerto);
             socket.setBroadcast(true);
             socket.setSoTimeout(500);

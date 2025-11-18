@@ -1,6 +1,7 @@
 package clientes;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -30,6 +31,10 @@ public class Cliente {
     public Cliente() {
         this.servidores = new HashMap<String, List<String>>();
         try {
+            File logDir = new File("logs");
+            if (!logDir.exists()) {
+                logDir.mkdirs();
+            }
             socket = new DatagramSocket(8000);
             jsonLog = new BufferedWriter(new FileWriter("logs/cliente_log.json", true));
             xmlLog = new BufferedWriter(new FileWriter("logs/cliente_log.xml", true));
