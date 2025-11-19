@@ -25,10 +25,12 @@ fi
 
 mvn clean package || exit 1
 
-java -jar target/MainServidor-jar-with-dependencies.jar &
+cd target
+
+java -jar MainServidor-jar-with-dependencies.jar &
 PID_SERVIDOR=$!
 
-java -jar target/ClienteGUI-jar-with-dependencies.jar &
+java -jar ClienteGUI-jar-with-dependencies.jar &
 PID_CLIENTE=$!
 
 wait

@@ -59,6 +59,8 @@ public class Cliente {
                 if(tipo.equals("X") && resultado.contains("<Estacion>")) {
                     e = new Estacion();
                     e.fromXmlString(resultado);
+                    System.out.println("Mensaje XML validado correctamente");
+                    System.out.println(resultado);
                 } else if(tipo.equals("J") && resultado.startsWith("{")) {
                     e = new Estacion();
                     e.fromJsonString(resultado);
