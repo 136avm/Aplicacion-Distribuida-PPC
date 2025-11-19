@@ -41,6 +41,7 @@ formatoAll <XML/JSON> -> cambia el formato de envio de los servidores
 clear -> limpia la pantalla
 salir -> cierra el programa
 ```
+El proyecto corre en **Java 21**
 
 ---
 
