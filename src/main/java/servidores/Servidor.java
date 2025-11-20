@@ -235,7 +235,7 @@ public class Servidor extends Thread {
     
     private void guardarEnLog(String mensaje, String tipo) {
         String fecha = sdf.format(new Date());
-        String lineaLog = "---- " + fecha + " ----\n" + mensaje.substring(2) + "\n\n";
+        String lineaLog = "---- " + fecha + " ----\n" + mensaje + "\n\n";
         try {
             if(tipo.equals("J")) {
                 jsonLog.write(lineaLog);
