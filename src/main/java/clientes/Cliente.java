@@ -64,6 +64,8 @@ public class Cliente {
                 } else if(tipo.equals("J") && resultado.startsWith("{")) {
                     e = new Estacion();
                     e.fromJsonString(resultado);
+                    System.out.println("Nuevo mensaje JSON:");
+                    System.out.println(resultado);
                 }
                 StringBuilder sb = new StringBuilder();
                 if(e.getT() != null) sb.append("T: ").append(String.format("%.2f", e.getT())).append("; ");
